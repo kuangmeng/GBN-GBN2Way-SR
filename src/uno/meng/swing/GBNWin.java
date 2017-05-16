@@ -27,9 +27,6 @@ public class GBNWin {
 	public static JTextArea acknum = new JTextArea();
 	public static JTextArea receive = new JTextArea();
 
-
-
-
 	/**
 	 * Launch the application.
 	 */
