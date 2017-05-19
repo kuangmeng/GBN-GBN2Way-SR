@@ -18,6 +18,7 @@ public class Sender extends Thread {
     private static int[] ACKInfo;
     private static int Segments;
     private static int Remain;
+    
     static Timer[] timers;
     private static InetAddress inetAddress;
     private static DatagramSocket ClientSocket;
@@ -37,6 +38,7 @@ public class Sender extends Thread {
         for(int i = 0; i < ACKInfo.length; i++){
             ACKInfo[i] = 0;
         }
+        
         try {
             ClientSocket = new DatagramSocket();
         }catch (SocketException e){
@@ -62,6 +64,7 @@ public class Sender extends Thread {
             }
         }
     }
+    
     public void run(){
         while (true){
             DatagramPacket receivePacket = new DatagramPacket(receive,receive.length);

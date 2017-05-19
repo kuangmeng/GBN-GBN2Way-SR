@@ -16,6 +16,7 @@ public class Receiver extends Thread {
     private static int last;
     private static int Segments;//待发送报文段
     public Receiver(){
+    	
         last = -1;
         Segments = GBN.SEGMENTS;
         try {
